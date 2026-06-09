@@ -1,0 +1,219 @@
+/* CSS Root Variables & Minimal Standard Fixes */
+:root {
+    --accent: #d2a679;
+    --primary: #6b4226;
+    --dark: #2d1b12;
+    --light-bg: #f8f5f1;
+    --btn-gradient: linear-gradient(45deg, #6b4226, #d2a679);
+    /* Hexagon geometry math variables */
+    --hex-width: 250px;
+    --hex-height: calc(var(--hex-width) * 1.1547);
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Color Overrides Using Root Variables */
+.text-primary-custom {
+    color: var(--primary) !important;
+}
+
+.text-accent-custom {
+    color: var(--accent) !important;
+}
+
+.bg-dark-custom {
+    background-color: var(--dark) !important;
+}
+
+/* Component-specific Styles */
+.navbar-brand img,
+.footer-logo {
+    border-radius: 50%;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("material/about images/bg.avif") center/cover no-repeat;
+}
+
+.card-img-top {
+    height: 260px;
+    object-fit: cover;
+}
+
+.card-custom {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.card-custom:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.btn-theme {
+    background: var(--btn-gradient);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+    opacity: 0.9;
+    transform: scale(1.02); /* Removed redundant color: white */
+}
+
+/* Honeycomb Grid Section */
+.honeycomb-section {
+    background-color: #f8f5f1;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+/* The container holding the entire grid structure */
+.honeycomb-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+/* Base setup for every individual hexagon block */
+.hexagon-item {
+    width: var(--hex-width);
+    height: var(--hex-height);
+    margin: calc(var(--hex-width) * -0.1) calc(var(--hex-width) * 0.05);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    background: #e0dcd3;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* The container inside holding the image and text elements */
+.hexagon-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Background image treatment inside the cell */
+.hexagon-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+/* Dark overlay effect that shifts on hover actions */
+.hexagon-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(45, 27, 18, 0.4), rgba(45, 27, 18, 0.85));
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+/* Typography settings inside the hexagons */
+.hexagon-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.35rem;
+    margin-bottom: 5px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(15px);
+    transition: transform 0.4s ease;
+}
+
+.hexagon-count {
+    color: var(--accent);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+/* Interactive Hover Transitions */
+.hexagon-item:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.hexagon-item:hover::after {
+    background: linear-gradient(rgba(107, 66, 38, 0.7), rgba(45, 27, 18, 0.95));
+}
+
+.hexagon-item:hover .hexagon-bg {
+    transform: scale(1.15);
+}
+
+.hexagon-item:hover .hexagon-title {
+    transform: translateY(0px);
+}
+
+.hexagon-item:hover .hexagon-count {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Creates the interlocking honeycomb offset structure on large displays */
+@media (min-width: 992px) {
+    .honeycomb-grid {
+        width: 850px;
+    }
+
+    /* Shifts the 4th and 5th items to interlock underneath the top row */
+    .hexagon-item:nth-child(4) {
+        margin-left: calc(var(--hex-width) * 0.55);
+    }
+}
+
+@media (max-width: 768px) {
+    .honeycomb-grid {
+        flex-direction: column;
+    }
+
+    .hexagon-item {
+        margin: 15px 0;
+    }
+}

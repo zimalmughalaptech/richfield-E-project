@@ -1,0 +1,44 @@
+.hero {
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../material/about images/bg.avif") center/cover;
+}
+
+.card-custom-alt {
+    background: #fff;
+    border-top: 4px solid var(--primary);
+    border-radius: 12px;
+    transition: 0.3s;
+    flex: 1 1 220px;
+}
+
+.card-custom-alt:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.team-card {
+    flex: 1 1 130px;
+}
+
+.team-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    transition: 0.3s;
+}
+
+.team-card:hover .team-img {
+    border-color: var(--accent);
+    transform: scale(1.05);
+}
+
+footer a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: var(--accent) !important;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richfield Chair - Lounge Collection</title>
+     <!-- favicon  -->
+    <link rel="shortcut icon" href="material/Logo.png" type="image/x-icon">
+   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- DataTables Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body class="bg-light">
+
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom shadow-sm sticky-top">
+    <div class="container">
+        <!-- Logo + Brand -->
+        <a class="navbar-brand d-flex align-items-center fw-bold text-white" href="#">
+            <img src="material/Logo.png" class="me-2" alt="Logo" width="40" height="40">
+            Richfield Chair
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto gap-2">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#chairCategories">Categories</a></li>
+                
+                <!-- NEW DROPDOWN MENU -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Chairs Collection
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="lounge.html"><i class="fas fa-couch me-2 text-info"></i> Lounge Chairs</a></li>
+                        <li><a class="dropdown-item" href="folding2.html"><i class="fas fa-chair me-2 text-info"></i> Folding Wood</a></li>
+                        <li><a class="dropdown-item" href="gaming3.html"><i class="fas fa-gamepad me-2 text-info"></i> Pro Gaming</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="molded4.html"><i class="fas fa-recycle me-2 text-info"></i> Molded Chairs</a></li>
+                        <li><a class="dropdown-item" href="rocking5.html"><i class="fas fa-sync me-2 text-info"></i> Rocking Chairs</a></li>
+                        <li><a class="dropdown-item" href="office6.html"><i class="fas fa-briefcase me-2 text-info"></i> Office Chairs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Cards  -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-5">Our Lounge Chairs Gallery</h2>
+        <div class="row g-4 mb-5">
+
+            <!-- CARD 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (1).jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Aero Lounge</h5>
+                        <p class="card-text text-muted">A deep-seated signature piece optimized for ultimate spinal relaxation.</p>
+                        <h4 class="text-success fw-bold">Rs 28,500</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn1">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Aero Lounge" data-price="Rs 28,500" data-desc="Spinal relaxation optimization">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (1).webp" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Nordic Rest</h5>
+                        <p class="card-text text-muted">Minimalist clean lines blended with premium natural woven fabric wrapping.</p>
+                        <h4 class="text-success fw-bold">Rs 34,000</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn2">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Nordic Rest" data-price="Rs 34,000" data-desc="Minimalist woven fabric design">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (2).jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Sleek Studio</h5>
+                        <p class="card-text text-muted">Low-profile modern layout that functions as an artistic living room anchor.</p>
+                        <h4 class="text-success fw-bold">Rs 31,200</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn3">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Sleek Studio" data-price="Rs 31,200" data-desc="Low-profile modern structural build">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (2).webp" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Cosy Shell</h5>
+                        <p class="card-text text-muted">Contoured back cradling system offering an incredibly snug seated experience.</p>
+                        <h4 class="text-success fw-bold">Rs 29,900</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn4">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Cosy Shell" data-price="Rs 29,900" data-desc="Contoured back comfort structure">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (3).jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Urban Cushion</h5>
+                        <p class="card-text text-muted">Thick dual-density luxury foam top tailored for casual luxury lounging.</p>
+                        <h4 class="text-success fw-bold">Rs 36,500</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn5">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Urban Cushion" data-price="Rs 36,500" data-desc="Dual-density premium foam padding">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (3).webp" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Metro Velvet</h5>
+                        <p class="card-text text-muted">Smooth, rich velvet tactile upholstery with sturdy high-grade metal legs.</p>
+                        <h4 class="text-success fw-bold">Rs 42,000</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn6">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Metro Velvet" data-price="Rs 42,000" data-desc="Velvet upholstery with luxury metal finishes">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (4).jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Vista Club</h5>
+                        <p class="card-text text-muted">Wide ergonomic design with sloped armrests suited for reading corners.</p>
+                        <h4 class="text-success fw-bold">Rs 33,800</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn7">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Vista Club" data-price="Rs 33,800" data-desc="Sloped armrests built for active reading">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (4).webp" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Retro Bloom</h5>
+                        <p class="card-text text-muted">Mid-century curved architecture that seamlessly upgrades empty spaces.</p>
+                        <h4 class="text-success fw-bold">Rs 35,000</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn8">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Retro Bloom" data-price="Rs 35,000" data-desc="Mid-century modern aesthetic styling">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (5).jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Haven Glide</h5>
+                        <p class="card-text text-muted">Ultra-premium micro-fiber cushioning layer featuring a slight comforting tilt.</p>
+                        <h4 class="text-success fw-bold">Rs 39,000</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn9">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Haven Glide" data-price="Rs 39,000" data-desc="Premium micro-fiber blend with recline build">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 10 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (6).jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Oasis Boucle</h5>
+                        <p class="card-text text-muted">Soft-textured bouclé yarn finish making it an absolute aesthetic masterpiece.</p>
+                        <h4 class="text-success fw-bold">Rs 45,000</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn10">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Oasis Boucle" data-price="Rs 45,000" data-desc="Textured premium luxury bouclé yarn">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 11 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (7).jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Legacy Accent</h5>
+                        <p class="card-text text-muted">Reinforced inner frame structure crafted to endure heavy long-term family use.</p>
+                        <h4 class="text-success fw-bold">Rs 27,000</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn11">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Legacy Accent" data-price="Rs 27,000" data-desc="Heavy-duty internal wooden framework">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 12 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow border-0 h-100">
+                    <img src="material/lounge_chair/lounge (8).jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Zen Cocoon</h5>
+                        <p class="card-text text-muted">Ergonomically engineered layout to reduce pressure points while resting.</p>
+                        <h4 class="text-success fw-bold">Rs 38,500</h4>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#mn12">Quick Preview</button>
+                            <button class="btn btn-outline-warning compare-btn" data-name="Zen Cocoon" data-price="Rs 38,500" data-desc="Pressure-relieving ergonomic design system">Compare</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JQUERY DATA TABLE FOR SEARCH -->
+        <div class="card border-0 shadow p-4 mt-5">
+            <h4 class="fw-bold mb-3 text-dark"><i class="fa-solid fa-scale-balanced me-2 text-warning"></i>Product Comparison Matrix</h4>
+            <p class="text-muted small">Click the "Compare" button on any chair above to instantly drop its tech specifications into this searchable datasheet tracker.</p>
+            <div class="table-responsive">
+                <table id="compareTable" class="table table-striped table-bordered w-100">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Product Layout Name</th>
+                            <th>Current Price</th>
+                            <th>Primary Comfort Engineering</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== INDIVIDUAL MODALS (1-12) ==================== -->
+
+    <!-- MODAL 1 -->
+    <div class="modal fade" id="mn1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (1).jpg" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Aero Lounge 🪑</h4><p class="text-muted small my-2">A deep-seated signature piece optimized for ultimate spinal relaxation.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 28,500</span><span class="old-price small fs-6">Rs 35,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div class="modal fade" id="mn2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (1).webp" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Nordic Rest 🪑</h4><p class="text-muted small my-2">Minimalist clean lines blended with premium natural woven fabric wrapping.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 34,000</span><span class="old-price small fs-6">Rs 42,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 3 -->
+    <div class="modal fade" id="mn3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (2).jpg" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Sleek Studio 🪑</h4><p class="text-muted small my-2">Low-profile modern layout that functions as an artistic living room anchor.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 31,200</span><span class="old-price small fs-6">Rs 39,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 4 -->
+    <div class="modal fade" id="mn4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (2).webp" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Cosy Shell 🪑</h4><p class="text-muted small my-2">Contoured back cradling system offering an incredibly snug seated experience.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 29,900</span><span class="old-price small fs-6">Rs 36,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 5 -->
+    <div class="modal fade" id="mn5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (3).jpg" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Urban Cushion 🪑</h4><p class="text-muted small my-2">Thick dual-density luxury foam top tailored for casual luxury lounging.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 36,500</span><span class="old-price small fs-6">Rs 44,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 6 -->
+    <div class="modal fade" id="mn6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (3).webp" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Metro Velvet 🪑</h4><p class="text-muted small my-2">Smooth, rich velvet tactile upholstery with sturdy high-grade metal legs.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 42,000</span><span class="old-price small fs-6">Rs 50,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 7 -->
+    <div class="modal fade" id="mn7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (4).jpg" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Vista Club 🪑</h4><p class="text-muted small my-2">Wide ergonomic design with sloped armrests suited for reading corners.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 33,800</span><span class="old-price small fs-6">Rs 40,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 8 -->
+    <div class="modal fade" id="mn8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (4).webp" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Retro Bloom 🪑</h4><p class="text-muted small my-2">Mid-century curved architecture that seamlessly upgrades empty spaces.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 35,000</span><span class="old-price small fs-6">Rs 43,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 9 -->
+    <div class="modal fade" id="mn9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (5).jpg" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Haven Glide 🪑</h4><p class="text-muted small my-2">Ultra-premium micro-fiber cushioning layer featuring a slight comforting tilt.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 39,000</span><span class="old-price small fs-6">Rs 48,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 10 -->
+    <div class="modal fade" id="mn10" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (6).jpg" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Oasis Boucle 🪑</h4><p class="text-muted small my-2">Soft-textured bouclé yarn finish making it an absolute aesthetic masterpiece.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 45,000</span><span class="old-price small fs-6">Rs 55,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 11 -->
+    <div class="modal fade" id="mn11" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (7).jpg" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Legacy Accent 🪑</h4><p class="text-muted small my-2">Reinforced inner frame structure crafted to endure heavy long-term family use.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 27,000</span><span class="old-price small fs-6">Rs 34,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+    <!-- MODAL 12 -->
+    <div class="modal fade" id="mn12" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow rounded-4"><div class="modal-header border-0 pb-0"><h5 class="modal-title fw-bold">Product Details</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body p-4 target-body"><div class="row g-4 main-modal-row"><div class="col-md-6"><img src="material/lounge_chair/lounge (8).jpg" class="product-img shadow-sm"></div><div class="col-md-6 d-flex flex-column justify-content-center"><h4 class="fw-bold text-dark">Zen Cocoon 🪑</h4><p class="text-muted small my-2">Ergonomically engineered layout to reduce pressure points while resting.</p><div class="my-3"><span class="price text-danger fs-3 fw-bold me-2">Rs 38,500</span><span class="old-price small fs-6">Rs 46,000</span></div><button class="btn btn-success fw-bold w-100 py-2 mt-3 order-now-btn">Order Now</button></div></div></div></div>
+        </div>
+    </div>
+
+      <!-- Universal Page Footer Section -->
+    <footer class="text-white-50 pt-5 pb-3 bg-dark-custom">
+        <div class="container text-center text-md-start">
+            <div class="row g-4">
+                <!-- Column 1: Info -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                        <img src="material/Logo.png" alt="logo" class="footer-logo me-2" width="40" height="40">
+                        Richfield Chairs
+                    </h5>
+                    <p class="small lh-base">Crafting elite seating solutions for your workspaces and homes since 2026. Prioritizing comfort, posture alignment, and modern style.</p>
+                </div>
+                <!-- Column 2: Links -->
+                <div class="col-md-4 text-center">
+                    <h5 class="fw-bold text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="index.html" class="text-reset text-decoration-none">Home</a></li>
+                        <li><a href="index.html#chairCategories" class="text-reset text-decoration-none">Chairs Collection</a></li>
+                        <li><a href="about.html" class="text-reset text-decoration-none">About Us</a></li>
+                        <li><a href="about.html#contact" class="text-reset text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Contact Info -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Get In Touch</h5>
+                    <p class="small mb-2"><i class="fa-solid fa-location-dot me-2 text-accent-custom"></i> Aptech North Karachi</p>
+                    <p class="small mb-3"><i class="fa-solid fa-envelope me-2 text-accent-custom"></i>Rehman@richfieldchairs.com</p>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-5">
+                        <a href="https://www.facebook.com/" class="text-reset"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" class="text-reset"><i class="fa-brands fa-instagram text-danger"></i></a>
+                        <a href="https://x.com/" class="text-white-50"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-50 mx-auto my-4 opacity-25 border-white">
+            <p class="text-center small mb-0">&copy; 2026 Richfield Chairs | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Infrastructure -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+
+    <script src="compare.js"></script>
+
+</body>
+</html>
